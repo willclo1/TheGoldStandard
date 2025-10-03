@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Gold Standard – Team Overview</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Montserrat:wght@400;600&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --green: #154734;
+            --gold: #d4af37;
+            --white: #ffffff;
+            --gray: #f7f7f7;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background: var(--gray);
+            color: #222;
+        }
+
+        header {
+            background: var(--green);
+            color: var(--white);
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+
+        header img {
+            max-width: 140px;
+            margin-bottom: 1rem;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8rem;
+            margin: 0;
+            color: var(--gold);
+        }
+
+        header p {
+            margin: .5rem 0 0;
+            font-weight: 500;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: auto;
+            padding: 2rem 1.5rem;
+        }
+
+        section {
+            margin-bottom: 3rem;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            margin-bottom: .5rem;
+            color: var(--green);
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .team-grid {
+            display: grid;
+            gap: 1.5rem;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        }
+
+        .card {
+            background: var(--white);
+            border-radius: 10px;
+            padding: 1.2rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            border-left: 5px solid var(--gold);
+            transition: transform .2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+        }
+
+        .role {
+            font-size: .9rem;
+            font-weight: 600;
+            color: var(--green);
+            margin-bottom: .3rem;
+        }
+
+        .name {
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        footer {
+            background: var(--green);
+            color: var(--white);
+            text-align: center;
+            padding: 1rem;
+            font-size: .9rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <!-- Swap logo.png with your actual logo file -->
+        <img src="logo.png" alt="The Gold Standard Logo">
+        <h1>The Gold Standard</h1>
+        <p>Partnering with the Greater Waco Sports Commission</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>About Us</h2>
+            <p>
+                We are <strong>The Gold Standard</strong>, a Baylor student team dedicated to researching
+                and analyzing real community challenges. This semester, we’re partnering with the
+                <strong>Greater Waco Sports Commission</strong> to identify key issues and develop
+                innovative solutions that support athletics and community engagement in Waco.
+            </p>
+        </section>
+
+        <section>
+            <h2>Our Partner</h2>
+            <p>
+                The <strong>Greater Waco Sports Commission</strong> works to promote, attract,
+                and support sports activities that positively impact the community. We’re proud to
+                collaborate with them in driving sports development across the Waco area.
+            </p>
+        </section>
+
+        <section>
+            <h2>Meet the Team</h2>
+            <div class="team-grid">
+                <div class="card">
+                    <div class="role">Project Manager</div>
+                    <div class="name">Will Clore</div>
+                </div>
+                <div class="card">
+                    <div class="role">Liaison</div>
+                    <div class="name">Drew Berry</div>
+                </div>
+                <div class="card">
+                    <div class="role">Writing Design Director</div>
+                    <div class="name">Amelia Martinez</div>
+                </div>
+                <div class="card">
+                    <div class="role">Writing Design Director</div>
+                    <div class="name">Makari Matthew</div>
+                </div>
+                <div class="card">
+                    <div class="role">Research Director</div>
+                    <div class="name">Sheridan Prejean</div>
+                </div>
+                <div class="card">
+                    <div class="role">Research Director</div>
+                    <div class="name">Isabelle Marinello</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        © 2025 The Gold Standard | Baylor University Project
+    </footer>
+
+</body>
+
+</html>
